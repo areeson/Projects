@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+    padding: 20px 30px;
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.212);
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.top .title-text{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.social-links ul{
+    font-size: 20px;
+    font-weight: 200;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+
+.social-links ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #eee;
+}
+
+.social-links ul li a:hover{
+    text-decoration: none;
+    color: rgb(226, 198, 41);
+}
+
+.date-container{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    font-weight: 100;
+    margin-bottom: -60px;
+    margin-top: 0px;
+}
+
+.date-container .date{
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.date-container .time {
+    font-size: 20px;
+}
+
+.date-container #am-pm{
+    font-size: 20px;
+}
+
+.project-category{
+    color: #eee;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.projects{
+    background: rgba(24, 24, 27, 0.8);
+    padding: 25px;
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .project{
+    display: flex;
+    width: 250px;
+}
+
+.project .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.384);
+}
+
+.project .project-container .name{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:#FFFFFF;
+    background-color: rgba(0, 0, 0, 0.479);
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.project .project-container .name:hover{
+    background-color: rgba(226, 198, 41, 0.24);
+}
+
+.project .project-container .description{
+    font-weight: 100;
+    font-size: 14px;
+}
+.project .project-container .w-icon{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+@media only screen and (max-width:700px){
+
+    .container{
+        padding: 20px;
+    }
+
+    .top .title-text{
+        font-size: 22px;
+        padding-right: 50px;
+    }
+
+    .date-container{
+        justify-content: center;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        padding: 20px;
+        min-width: 350px;
+    }
+
+    .project-category{
+        margin-bottom: -30px;
+    }
+
+    .project .project-container .name{
+        display: block;
+        margin: 0.2em auto;
+    }
+}
